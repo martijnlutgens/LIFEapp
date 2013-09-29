@@ -18,24 +18,26 @@
  under the License.
 -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
-        id        = "io.cordova.helloCordova"
+        id        = "io.cordova.LIFEapp"
         version   = "2.0.0">
     <name>Hello Cordova</name>
 
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        De LIFE app voor al het laatste LIFE nieuws
     </description>
 
-    <author href="http://cordova.io" email="dev@cordova.apache.org">
+    <author href="http://lutgens.eu" email="martijnlutgens@yahoo.com">
         Apache Cordova Team
     </author>
 
     <access origin="*"/>
 
     <!-- <content src="http://mysite.com/myapp.html" /> for external pages -->
-    <content src="index.html" />
+    <content src="http://dev.lifesites.nl/index.php/life-app" />
 
     <preference name="loglevel" value="DEBUG" />
+    <preference name="splashscreen" value="lifelogo.png" />
+    <preference name="backgroundColor" value="0x000" />
     <!--
       <preference name="splashscreen" value="resourceName" />
       <preference name="backgroundColor" value="0xFFF" />

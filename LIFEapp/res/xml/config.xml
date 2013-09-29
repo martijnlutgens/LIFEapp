@@ -26,14 +26,14 @@
         De LIFE app voor al het laatste LIFE nieuws
     </description>
 
-    <author href="http://lutgens.eu" email="martijnlutgens@yahoo.com">
+    <author href="http://lifesites.nl" email="martijnlutgens@yahoo.com">
         LIFE
     </author>
 
     <access origin="*"/>
 
     <!-- <content src="http://mysite.com/myapp.html" /> for external pages -->
-    <content src="http://dev.lifesites.nl/index.php/life-app" />
+    <content src="index.html" />
 
     <preference name="loglevel" value="DEBUG" />
     <preference name="splashscreen" value="lifelogo.png" />

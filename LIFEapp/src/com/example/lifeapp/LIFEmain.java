@@ -9,6 +9,7 @@ public class LIFEmain extends DroidGap  {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);		
-		super.loadUrl("file:///assets/www/index.html");
+		super.loadUrl("file:///assets/www/index.html");		
 	}
+	
 }

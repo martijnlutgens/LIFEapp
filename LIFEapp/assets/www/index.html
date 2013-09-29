@@ -2,7 +2,67 @@
 <html>
  <head>
   <title>LIFE</title>
-  <script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script>
+  <script type="text/javascript" charset="utf-8" src="jqtouch.js">
+  document.addEventListener("deviceready",setupToolbars);
+
+function setupToolbars() {
+ // Add these if you want the toolbar
+ // window.uicontrols.createToolBar();
+ // window.uicontrols.setToolBarTitle("Toolbar");
+
+var activeTab;
+activeTab = "#home"; // Better to have intro screen at home, and then make tab1 the first tab.
+
+window.uicontrols.createTabBar();
+
+window.uicontrols.createTabBarItem("tab1", "Tab1", null, {
+  onSelect: function() {
+    myName = "#home"
+    if (activeTab != myName)
+    {
+        jQT.goTo("#home", "fade");
+        activeTab = myName;
+    }
+  }
+});
+
+window.uicontrols.createTabBarItem("tab2", "Tab2", null, {
+  onSelect: function() {
+    myName = "#tab2"
+    if (activeTab != myName)
+    {
+        jQT.goTo("#tab2", "fade");
+        activeTab = myName;
+    }
+  }
+});
+
+window.uicontrols.createTabBarItem("tab3", "Tab3", null, {
+  onSelect: function() {
+    myName = "#tab3"
+    if (activeTab != myName)
+    {
+        jQT.goTo("#tab3", "fade");
+        activeTab = myName;
+    }
+  }
+});
+
+ window.uicontrols.createTabBarItem("tab4", "Tab4", null, {
+  onSelect: function() {
+    myName = "#tab4"
+    if (activeTab != myName)
+    {
+        jQT.goTo("#tab4", "fade");
+        activeTab = myName;
+    }
+  }
+});
+
+ window.uicontrols.showTabBar();
+ window.uicontrols.showTabBarItems("tab1", "tab2", "tab3", "tab4");
+}</script>
+<script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script>
  </head>
  <body>
     <iframe width="100%" height="100%" src="http://dev.lifesites.nl/index.php/life-app"></iframe>
